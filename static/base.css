@@ -1,0 +1,17 @@
+.lobster_header_logo {
+    margin: 2rem 0;
+    font-family: 'Pacifico', sans-serif;
+}
+
+.lobster_header_button{
+    margin-bottom: 2rem;
+}
+
+.lobster_footer_logo{
+    margin: 1.5rem 0;
+    font-family: 'Pacifico', sans-serif;
+}
+
+.lobster_footer_button{
+    margin-top: 1.5rem;
+}
