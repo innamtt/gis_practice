@@ -10,4 +10,4 @@ def account_ownership_required(func):
             return func(request, *args, **kwargs)
         else:
             return HttpResponseForbidden()
-        return decorated
+    return decorated
