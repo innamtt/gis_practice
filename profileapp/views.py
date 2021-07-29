@@ -35,6 +35,5 @@ class ProfileUpdateView(UpdateView):
     form_class = ProfileCreationForm
     template_name = 'profileapp/update.html'
 
-    @property
     def get_success_url(self):
         return reverse('accountapp:detail', kwargs={'pk': self.object.user.pk})
