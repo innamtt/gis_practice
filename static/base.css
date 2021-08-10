@@ -1,19 +1,14 @@
-.lobster_header_logo {
-    margin: 2rem 0;
-    font-family: 'Pacifico', sans-serif;
+.intro_header_logo{
+    margin: 2rem 0; font-family: 'Maven Pro', sans-serif;
 }
-
-.lobster_header_button{
+.intro_header_buttons{
     margin-bottom: 2rem;
 }
-
-.lobster_footer_logo{
-    margin: 1.5rem 0;
-    font-family: 'Pacifico', sans-serif;
+.outro_footer_logo{
+    margin:1.5rem 0; font-family: 'Maven Pro', sans-serif;
 }
-
-.lobster_footer_button{
-    margin-top: 1.5rem;
+.outro_footer_buttons{
+    margin-top:1.5rem;
 }
 
 .mw-500 {
@@ -34,7 +29,7 @@
 
 .round_button{
     color: black;
-    text-decoration: none;
+    text-decoration: none; /*밑줄삭제*/
     box-shadow: 0 0 3px black;
     border-radius: 20rem;
     padding: .3rem;
