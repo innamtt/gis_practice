@@ -1,5 +1,5 @@
-{% extends 'base.html' %}
 {% load static %}
+
 
     <style>
         .container {
@@ -10,19 +10,19 @@
         .container div {
           width: 45%;
             max-width: 200px;
-          {#background-color: antiquewhite;#}
           display: flex;
           justify-content: center;
           align-items: center;
           border-radius: 1rem;
-          flex-direction: column;
-          box-shadow: 0 0 .5rem darkgrey;
+            flex-direction: column;
+            box-shadow: 0 0 .5rem darkgray;
         }
 
         .container img {
             width: 100%;
             border-radius: 1rem;
         }
+
     </style>
 
     <div class="container my-4">
@@ -37,6 +37,7 @@
             </div>
 
         {% endfor %}
+
     </div>
 
     <script src="{% static 'js/magicgrid.js' %}"></script>
@@ -45,11 +46,11 @@
 
     <div class="text-center my-5">
         <a href="{% url 'articleapp:create' %}"
-            class="btn btn-dark rounded-pill material-icons">
+           class="btn btn-dark rounded-pill material-icons">
             brush
         </a>
         <a href="{% url 'articleapp:create' %}"
-            class="btn btn-outline-dark rounded-pill">
+           class="btn btn-outline-dark rounded-pill px-5">
             Create Article
         </a>
     </div>
