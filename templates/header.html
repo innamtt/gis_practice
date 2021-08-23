@@ -5,6 +5,13 @@
     <div class="lobster_header_button">
         <span><a href="{% url 'articleapp:list' %}">Articles</a></span>
         <span><a href="{% url 'projectapp:list' %}">Projects</a></span>
+        {% if user.is_authenticated %}
+        <span>
+            <a href="{% url 'subscribeapp:list' %}">
+                Subscription
+            </a>
+        </span>
+        {% endif %}
         {% if not user.is_authenticated %}
         <span>
             <a href="{% url 'accountapp:login' %}">
