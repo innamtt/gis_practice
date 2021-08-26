@@ -14,7 +14,7 @@ from articleapp.models import Article
 from likeapp.models import LikeRecord
 
 
-@transaction.atomic()
+@transaction.atomic
 def db_transaction(user, article):
     article.like += 1
     article.save()
