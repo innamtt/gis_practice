@@ -14,12 +14,24 @@ services:
       - gis_practice_media:/data/media/
 
   django:
-    image: gis_practice_django:3
+    image: gis_practice_django:4
     networks:
       - gis_practice_network
     volumes:
       - gis_practice_static:/home/gis_practice/staticfiles/
       - gis_practice_media:/home/gis_practice/media/
+
+  mariadb:
+    image: mariadb:10.5
+    networks:
+      - gis_practice_network
+    volumes:
+      - gis_mariadb:/var/lib/mysql
+    environment:
+      MARIADB_ROOT_PASSWORD: password1234
+      MARIADB_DATABASE: django
+      MARIADB_USER: django
+      MARIADB_PASSWORD: password1234
 
 
 networks:
