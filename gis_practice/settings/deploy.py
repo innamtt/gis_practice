@@ -1,5 +1,19 @@
 from .base import *
 
+# env_list = dict()
+#
+# local_env = open(os.path.join(BASE_DIR, '.env'))
+#
+# while True:
+#     line = local_env.readline()
+#     if not line:
+#         break
+#     line = line.replace('\n','')
+#     start = line.find('=') # =를 찾은 인덱스를 알려줌
+#     key = line[:start]
+#     value = line[start+1:]
+#     env_list[key] = value
+
 
 def read_secret(secret_name):
 
